@@ -10,15 +10,19 @@
 
   <style>
     body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-                  url('ROSA.jpg') center/cover no-repeat;
-      color: #fff;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+  margin: 0; /* buang margin default */
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url('ROSA.jpg') center/cover no-repeat;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;    /* center secara vertikal */
+  justify-content: center; /* center secara horizontal */
+  text-align: center;      /* teks rata tengah */
+}
+
     .invitation-card {
       background: rgba(255, 255, 255, 0.15);
       backdrop-filter: blur(10px);
@@ -167,4 +171,5 @@
   </script>
 </body>
 </html>
+
 
