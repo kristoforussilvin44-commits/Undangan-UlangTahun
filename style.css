@@ -1,7 +1,8 @@
 .judul {
-  font-size: 2.5rem;
+  font-size: 1 rem;
   font-weight: bold;
   color: #ffeb3b;
   text-align: center;   /* rata tengah */
   white-space: nowrap;  /* cegah teks turun ke bawah */
 }
+
