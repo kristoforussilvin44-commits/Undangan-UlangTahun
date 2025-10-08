@@ -1,28 +1,9 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Undangan Ulang Tahun</title>
-<style>
-  @media (max-width: 600px) {
-    h1 {
-      font-size: 1.6rem;
-    }
-    h2 {
-      font-size: 1rem;
-    }
-    p, .info {
-      font-size: 0.9rem;
-    }
-    .countdown div {
-      font-size: 0.9rem;
-      padding: 10px;
-    }
-  }
-  </style>
-</head>
-<body>
+  <title>Rosa's 23rd Birthday Invitation</title>
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -38,6 +19,7 @@
       align-items: center;
       justify-content: center;
     }
+
     .invitation-card {
       background: rgba(255, 255, 255, 0.15);
       backdrop-filter: blur(10px);
@@ -46,32 +28,36 @@
       max-width: 500px;
       box-shadow: 0 8px 20px rgba(0,0,0,0.3);
       text-align: center;
-      display: none; /* awalnya disembunyikan */
+      display: none;
     }
+
     .judul {
-      font-size: 2.5rem;
+      font-size: 2rem;
       font-weight: bold;
       color: #ffeb3b;
-      text-align: center;
-      white-space: nowrap;
+      margin-bottom: 10px;
     }
+
     .countdown {
       display: flex;
       justify-content: center;
       gap: 15px;
       margin-top: 20px;
     }
+
     .count-box {
       background: rgba(255, 255, 255, 0.2);
       padding: 15px;
       border-radius: 15px;
       min-width: 70px;
     }
+
     .count-box h2 {
       margin: 0;
       font-size: 1.8rem;
       color: #ffeb3b;
     }
+
     .btn-custom {
       background: #ff4081;
       border: none;
@@ -81,91 +67,77 @@
       font-weight: 500;
       transition: 0.3s;
     }
+
     .btn-custom:hover {
       background: #e91e63;
     }
-    /* Halaman awal */
+
     .opening {
       text-align: center;
     }
+
     .opening h2 {
       color: #ffeb3b;
       margin-bottom: 20px;
+    }
+
+    @media (max-width: 600px) {
+      h1, .judul { font-size: 1.6rem; }
+      p { font-size: 0.9rem; }
+      .countdown div { font-size: 0.9rem; padding: 10px; }
     }
   </style>
 </head>
 <body>
   <div class="container">
 
-    <!-- Halaman Pembuka -->
+    <!-- Opening Page -->
     <div class="opening">
-      <h2>Halo, Selamat Datang!</h2>
-      <button id="openBtn" class="btn btn-custom">Buka Undangan</button>
+      <h2>Hi There! 🎉</h2>
+      <button id="openBtn" class="btn btn-custom">Open Invitation</button>
     </div>
-  
 
-    <!-- Isi Undangan -->
+    <!-- Invitation Card -->
     <div class="invitation-card mx-auto" id="invitation">
-      <h1 class="judul">Undangan Ulang Tahun</h1>
-      <h2>Maria Rosari Prasetyaningrum</h2>
-      <p class="mt-3">Halo teman-teman,</p>
-      <p>Aku mengundangmu untuk datang ke pesta ulang tahunku yang ke <b>23</b> 🎂</p>
+      <h1 class="judul">YOU ARE INVITED TO LUNCH BIRTHDAY 🎊</h1>
+      <h2>Rosa's 23rd Birthday</h2>
+
       <hr class="text-light">
-      <p><b>📅 Tanggal:</b> 12 Oktober 2025</p>
-      <p><b>🕒 Waktu:</b> 12:00 WIB</p>
-      <p><b>📍 Tempat:</b> Mall Metropolitan Bekasi</p>
 
-      
-<style>
-@media (max-width: 600px) {
-  h1 {
-    font-size: 1.6rem;
-  }
-  h2 {
-    font-size: 1rem;
-  }
-  p, .info {
-    font-size: 0.9rem;
-  }
-  .countdown div {
-    font-size: 0.9rem;
-    padding: 10px;
-  }
-}
-</style>
-
-      <audio id="bg-music" loop>
-  <source src="03 Bruno Mars - Count On Me.mp3" type="audio/mpeg">
-</audio>
-
+      <p><b>📅 Date:</b> Sunday, 12 October 2025</p>
+      <p><b>🕒 Time:</b> Lunch</p>
+      <p><b>📍 Location:</b> Soon to be... hahaha 🍱</p>
 
       <!-- Countdown -->
       <div class="countdown" id="countdown">
         <div class="count-box">
           <h2 id="days">0</h2>
-          <span>Hari</span>
+          <span>Days</span>
         </div>
         <div class="count-box">
           <h2 id="hours">0</h2>
-          <span>Jam</span>
+          <span>Hours</span>
         </div>
         <div class="count-box">
           <h2 id="minutes">0</h2>
-          <span>Menit</span>
+          <span>Minutes</span>
         </div>
         <div class="count-box">
           <h2 id="seconds">0</h2>
-          <span>Detik</span>
+          <span>Seconds</span>
         </div>
       </div>
 
       <hr class="text-light">
-      <p>Kehadiranmu sangat berarti bagiku 💖</p>
-      <a href="https://www.google.com/maps?q=Mall+Metropolitan+Bekasi" target="_blank" class="btn btn-custom mt-3">Lihat Lokasi</a>
+
+      <p>Thank you and see you guys! 💖</p>
+      <a href="https://maps.app.goo.gl/VvhFDY4M7PwYAwPz7" 
+         target="_blank" 
+         class="btn btn-custom mt-3">View Location</a>
     </div>
   </div>
 
-  <!-- Audio -->
+  <!-- Background Music -->
   <audio id="bg-music" loop>
     <source src="lagu.mp3" type="audio/mpeg">
   </audio>
@@ -192,19 +164,20 @@
 
       if (distance < 0) {
         clearInterval(x);
-        document.getElementById("countdown").innerHTML = "<h3>🎂 Selamat Ulang Tahun! 🎉</h3>";
+        document.getElementById("countdown").innerHTML = "<h3>🎂 It's Party Time! 🎉</h3>";
       }
     }, 1000);
 
-    // Buka Undangan + mainkan musik
+    // Open Invitation + Play Music
     document.getElementById("openBtn").addEventListener("click", function() {
-      document.querySelector(".opening").style.display = "none"; // sembunyikan halaman awal
-      document.getElementById("invitation").style.display = "block"; // tampilkan undangan
-      document.getElementById("bg-music").play(); // mulai musik
+      document.querySelector(".opening").style.display = "none";
+      document.getElementById("invitation").style.display = "block";
+      document.getElementById("bg-music").play();
     });
   </script>
 </body>
 </html>
+
 
 
 
